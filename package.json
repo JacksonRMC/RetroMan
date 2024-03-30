@@ -1,18 +1,32 @@
 {
-  "name": "",
+  "name": "Ghost Frequencies",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "astro start",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.7",
+    "@astrojs/react": "^3.1.0",
     "@astrojs/vercel": "^7.3.6",
+    "@types/react": "^18.2.73",
+    "@types/styled-components": "^5.1.34",
+    "antd": "^5.15.4",
     "astro": "^4.5.1",
+    "classnames": "^2.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
     "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/mocha": "^10.0.6",
+    "@types/react-dom": "^18.2.23",
+    "concurrently": "^8.2.2"
   }
 }

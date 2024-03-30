@@ -1,7 +1,7 @@
 ---
 title: Buzz Al-slurpn
 publishDate: 2020-03-02 00:00:00
-img: /assets/p1.webp
+img: /assets/nfts/something_over_there.jpg
 img_alt: Buzz Al-slurpn portrait
 description: |
   From Pond to Moon Dust, Hopping onto History.

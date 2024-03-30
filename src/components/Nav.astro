@@ -7,8 +7,9 @@ import { urls } from './Constants';
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/' },
-	{ label: 'HF AF', href: '/hall-of-fame/' },
+	{ label: 'Halls Of Ghost', href: '/hall-of-fame/' },
 	{ label: 'About', href: '/about/' },
+	{ label: 'Play to Earn', href: '/pacman_game/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -22,12 +23,66 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 <nav>
 	<div class="menu-header">
-		<a href="/" class="site-title">
-			<Icon icon="moon-stars" color="var(--accent-regular)" size="1.6em" gradient />
-			AstroFrog
-		</a> | <a href="https://jtlabs.xyz/" class="site-title">
-			From the minds at <strong>JT Labs</strong>
-		</a>
+		<div>
+			<a style={{display: "flex", justifyContent: "center"}} href="/" class="site-title">
+				<img
+					width="32"
+					src="/assets/Clyde.png"
+					alt="AstroFrog at work with a colleague"
+				/>
+				Ghost Frequencies
+				<img
+					width="32"
+					src="/assets/Inky.png"
+					alt="AstroFrog at work with a colleague"
+				/>
+			</a>
+			<a class="card" style={{display: "flex", justifyContent: "center"}}>
+				<img
+					width="36"
+					height="12"
+					src="/assets/Pacman 3.png"
+					alt="AstroFrog at work with a colleague"
+				/>
+				{
+					[...Array(10).keys()].map((dot, i) => {
+					if (dot === 4) {
+						return (
+							<Fragment>
+								<img
+									class="eat_ghost"
+									alt="Ghost Freq Token"
+									src="/assets/Pacman 2.png"
+								/>
+							</Fragment>
+						);
+					}
+					return (
+							<Fragment><h5 style={{
+								backgroundColor: "#fff",
+								border: "1px solid #fff",
+								width: "6px",
+								height: "6px",
+								margin: "auto",
+								borderRadius: "50%"
+							}} /></Fragment>
+						);
+					})
+				}
+				<img
+					width="36"
+					src="/assets/Pacman 4.png"
+					alt="Vulnerable Ghost"
+				/>
+			</a>
+			<hr class="horizontal-line">
+			<a href="http://www.ghostfrequencies.com/" class="site-title">
+				See the minds of <strong class="link_website">@GhostFreq</strong>
+			</a> 
+		</div>
+		<!-- <a href="https://jtlabs.xyz/" class="site-title">
+			<strong>Ghost Frequencies</strong>
+		</a> -->
 		<menu-button>
 			<template>
 				<button class="menu-button" aria-expanded="false">
@@ -177,6 +232,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		line-height: 1.1;
 		color: var(--gray-0);
 		text-decoration: none;
+		margin: 0.5em 0 0.5em 0em;
 	}
 
 	.menu-button {
@@ -199,6 +255,17 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 	.menu-button[hidden] {
 		display: none;
+	}
+
+	.eat_ghost {
+		margin: 0.25em 0 0 0;
+		width: 2em;
+		height: 2em;
+	}
+
+	.horizontal-line {
+		margin: 1em 0 1em 0;
+		width: 100%;
 	}
 
 	.menu-button::before {
@@ -297,6 +364,10 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 		.menu-content {
 			display: contents;
+		}
+
+		.link_website {
+			text-decoration: underline;
 		}
 
 		.nav-items {
