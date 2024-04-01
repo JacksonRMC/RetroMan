@@ -1,7 +1,7 @@
 ---
-title: Rippit Signaler
+title: Sun Sinks Away
 publishDate: 2019-12-01 00:00:00
-img: /assets/p2.webp
+img: /assets/nfts/burningman_sunset.png
 img_alt: Rippit Signlar portrait
 description: |
   Charting the Course, Connecting the Cosmos.
