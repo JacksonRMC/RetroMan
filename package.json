@@ -1,5 +1,5 @@
 {
-  "name": "Ghost Frequencies",
+  "name": "retroman",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,7 +7,8 @@
     "start": "astro start",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "nuke": "rm -rf node_modules && rm -rf .astro && rm package-lock.json && npm cache clean --force"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.7",
@@ -20,6 +21,7 @@
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pacman": "^0.0.4",
     "react-router-dom": "^6.22.3",
     "typescript": "^5.4.2"
   },
