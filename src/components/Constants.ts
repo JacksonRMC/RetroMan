@@ -16,4 +16,5 @@ export const urls = {
   twitter: "https://twitter.com/AstroFrog_AF",
   jupiter: `https://jup.ag/swap/SOL-AF_${addresses.token}`,
   explorer: `https://solana.fm/address/${addresses.token}`,
+  instagram: `https://www.instagram.com/ghostfreq/`
 };
